@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
 
   const links = [
     {
@@ -44,7 +45,7 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
+      <div onClick={handleClick} onKeyDown={handleClick} role="button" tabIndex="0" className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 

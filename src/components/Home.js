@@ -10,20 +10,20 @@ const Home = () => (
     <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="flex flex-col justify-center h-full">
         <h2 className="text-4xl sm:text-7xl font-bold text-white">
-          I'm Dinma
+          I&apos;m Dinma
           {' '}
           <br />
           Glad to see you!
         </h2>
         <p className="text-gray-500 py-4 max-w-md">
-          I'm a software developer! I can help you build a product , feature
+          I&apos;m a software developer! I can help you build a product , feature
           or website Look through some of my work and experience! If you like
-          what you see and have a project you need coded, don't hestiate to
+          what you see and have a project you need coded, don&apos;t hestiate to
           contact me.
         </p>
 
         <div>
-          <button className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+          <button type="button" className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
             Portfolio
             <span className="group-hover:rotate-90 duration-300">
               <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
@@ -36,7 +36,7 @@ const Home = () => (
         <img
           src={Userimage}
           alt="userimage"
-          className="rounded-2xl mx-auto w-48 h-72"
+          className="hidden lg:block rounded-2xl mx-auto w-48 h-72"
         />
       </div>
     </div>
