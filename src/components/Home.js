@@ -1,5 +1,6 @@
 import React from 'react';
-import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { Link } from 'react-scroll';
+// import Socials from './Socials';
 import Userimage from '../assets/userimage.jpeg';
 
 const Home = () => (
@@ -22,13 +23,15 @@ const Home = () => (
           contact me.
         </p>
 
-        <div>
-          <button type="button" className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-            Portfolio
-            <span className="group-hover:rotate-90 duration-300">
-              <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-            </span>
-          </button>
+        <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:items-center">
+          <Link
+            to="contact"
+            smooth
+            duration={500}
+            className="text-center text-[#fff] hover:bg-[#E8E8FF] hover:text-black border-2 ml-10 mr-10 p-2 rounded-lg bg-[#2ebc2e] md:px-2 md:py-2 md:m-4"
+          >
+            Get in touch
+          </Link>
         </div>
       </div>
 
@@ -36,7 +39,7 @@ const Home = () => (
         <img
           src={Userimage}
           alt="userimage"
-          className="hidden lg:block rounded-2xl mx-auto w-48 h-72"
+          className="hidden md:block rounded-2xl mx-auto w-48 h-72"
         />
       </div>
     </div>
