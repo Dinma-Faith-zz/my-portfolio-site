@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <div
+  <section
     name="about"
     className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
   >
@@ -24,7 +24,7 @@ const About = () => (
         fun person 😊 and a fitness enthusiast.🏋️‍♀️
       </p>
     </div>
-  </div>
+  </section>
 );
 
 export default About;

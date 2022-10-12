@@ -26,7 +26,7 @@ const Socials = () => (
     </a>
     <a
       className="pr-14 md:pr-5"
-      href= "https://www.linkedin.com/in/chidinma-faith/"
+      href="https://www.linkedin.com/in/chidinma-faith/"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="My Linkedin profile"
