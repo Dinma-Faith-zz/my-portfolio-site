@@ -1,4 +1,4 @@
-const projects = [
+const portfolios = [
   {
     id: 1,
     title: 'calculatorApp',
@@ -41,4 +41,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default portfolios;
