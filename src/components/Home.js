@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-// import Socials from './Socials';
+import Socials from './Socials';
 import Userimage from '../assets/userimage.jpeg';
 
 const Home = () => (
@@ -32,6 +32,8 @@ const Home = () => (
           >
             Get in touch
           </Link>
+          <Socials />
+
         </div>
       </div>
 

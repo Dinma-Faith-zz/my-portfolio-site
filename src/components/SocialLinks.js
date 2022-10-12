@@ -37,7 +37,7 @@ const SocialLinks = () => {
           <FaTwitter size={30} />
         </>
       ),
-      href: 'https://www.twitter.com',
+      href: 'https://twitter.com/p_phayte',
     },
     {
       id: 4,
