@@ -1,74 +1,63 @@
 import React from 'react';
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-import installNode from '../assets/portfolio/installNode.jpg';
-import navbar from '../assets/portfolio/navbar.jpg';
-import reactParallax from '../assets/portfolio/reactParallax.jpg';
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
-import reactWeather from '../assets/portfolio/reactWeather.jpg';
+import portfolios from '../assets/data/data';
 
-const Portfolio = () => {
-  const portfolios = [
-    {
-      id: 1,
-      src: arrayDestruct,
-    },
-    {
-      id: 2,
-      src: reactParallax,
-    },
-    {
-      id: 3,
-      src: navbar,
-    },
-    {
-      id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
-  ];
-
-  return (
-    <div
-      name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
-          </p>
-          <p className="py-6">Check out some of my work right here</p>
-        </div>
-
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+const Portfolios = () => (
+  <div
+    name="portfolio"
+    id="portfolios"
+    className="text-gray-400 bg-gradient-to-b from-black to-gray-900 body-font z-[-10]"
+  >
+    <div className="container px-5 py-10 lg:px-40">
+      <h1 className="text-4xl mb-8 font-bold text-white">
+        My Portfolio
+      </h1>
+      <div className="flex flex-wrap -m-4">
+        {portfolios.map((portfolio) => (
+          <div
+            key={portfolio.id}
+            className="sm:w-1/2 w-100 p-4"
+          >
+            <div className="flex relative">
               <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                alt="gallery"
+                className="absolute inset-0 w-full h-full object-cover object-center"
+                src={portfolio.image}
               />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                  {portfolio.subtitle}
+                </h2>
+                <h1 className="title-font text-lg font-medium text-white mb-3">
+                  {portfolio.title}
+                </h1>
+                <p className="leading-relaxed z-[-10]">{portfolio.description}</p>
+                <div className="flex gap-6 justify-center mt-5">
+                  <a
+                    href={portfolio.repo}
+                    className="border-2 px-6 md:px-10 rounded bg-[#2ebc2e] hover:bg-[#E8E8FF] hover:text-black text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Check project source"
+                  >
+                    Source
+                  </a>
+                  <a
+                    href={portfolio.live}
+                    className="border-2 px-6 md:px-10 bg-[#2ebc2e] rounded hover:bg-[#E8E8FF] hover:text-black text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Check project demo"
+                  >
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
-  );
-};
+  </div>
+);
 
-export default Portfolio;
+export default Portfolios;

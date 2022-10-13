@@ -3,19 +3,19 @@ import React from 'react';
 const Contact = () => (
   <div
     name="contact"
-    className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+    className="h-full w-full bg-gradient-to-b from-black to-gray-800 p-4 text-white"
   >
     <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-      <div className="pb-8">
+      <div className="pt-8">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
           Contact
         </p>
-        <p className="py-6">Submit the form below to get in touch with me</p>
+        <p className="py-6 text-[#2ebc2e]">Submit the form below to get in touch with me</p>
       </div>
 
       <div className=" flex justify-center items-center">
         <form
-          action="https://getform.io/f/303ff2a0-c177-4f1e-90ba-65a8a6fc8b62"
+          action="https://getform.io/f/1602ceb3-aa64-40e7-8d5e-f8f6a97e3850"
           method="POST"
           className=" flex flex-col w-full md:w-1/2"
         >
@@ -38,8 +38,8 @@ const Contact = () => (
             className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
           />
 
-          <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-            Let's talk
+          <button type="submit" className="bg-[#2ebc2e] text-white hover:bg-[#E8E8FF] hover:text-black px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            Let&apos;s talk
           </button>
         </form>
       </div>
