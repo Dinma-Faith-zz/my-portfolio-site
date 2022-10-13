@@ -2,7 +2,11 @@ import React from 'react';
 import portfolios from '../assets/data/data';
 
 const Portfolios = () => (
-  <section name="portfolio" id="portfolios" className="text-gray-400 bg-gray-900 body-font">
+  <div
+    name="portfolio"
+    id="portfolios"
+    className="text-gray-400 bg-gradient-to-b from-black to-gray-900 body-font z-[-10]"
+  >
     <div className="container px-5 py-10 lg:px-40">
       <h1 className="text-4xl mb-8 font-bold text-white">
         My Portfolio
@@ -26,8 +30,8 @@ const Portfolios = () => (
                 <h1 className="title-font text-lg font-medium text-white mb-3">
                   {portfolio.title}
                 </h1>
-                <p className="leading-relaxed">{portfolio.description}</p>
-                <div className="flex gap-6 justify-center">
+                <p className="leading-relaxed z-[-10]">{portfolio.description}</p>
+                <div className="flex gap-6 justify-center mt-5">
                   <a
                     href={portfolio.repo}
                     className="border-2 px-6 md:px-10 rounded bg-[#2ebc2e] hover:bg-[#E8E8FF] hover:text-black text-white"
@@ -53,7 +57,7 @@ const Portfolios = () => (
         ))}
       </div>
     </div>
-  </section>
+  </div>
 );
 
 export default Portfolios;
