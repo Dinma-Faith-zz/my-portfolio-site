@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
--Clone the git repo using this command: **git clone git@github.com:Dinma-Faith/my-portfolio-site.git**
+- Clone the git repo using this command: **git clone git@github.com:Dinma-Faith/my-portfolio-site.git**
 
 ### Install
 
@@ -87,4 +87,3 @@ The design has been inspired by:
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-![](https://img.shields.io/badge/Microverse-blueviolet)
